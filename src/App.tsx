@@ -17,7 +17,7 @@ function App() {
             container: "Scanner",
           }}
           onScan={res => {
-            setOutput(res.map(it => it.rawValue))
+            setOutput(res.map(it => it.rawValue.slice(0, 25)))
           }}
         />
       </div>
