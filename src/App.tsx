@@ -14,7 +14,7 @@ function App() {
             container: "Scanner",
           }}
           onScan={res => {
-            console.info(res[0].rawValue);
+            window.alert(res[0].rawValue);
           }}
         />
       </div>
